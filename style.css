@@ -97,8 +97,11 @@
   }
   
   .header-menu {
-    float: right;
-    padding: 0 25%;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .header-menu a {
