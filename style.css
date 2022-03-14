@@ -164,7 +164,7 @@ header {
 
 .content-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 54px;
   margin-bottom: 20px;
 }
 
@@ -288,6 +288,10 @@ header {
   font-size: 35px;
   font-family: "Lucida Handwriting";
   color: white;
+  padding-bottom: 50px;
+}
+.pesan-form p{
+  margin: 15px;
 }
 .nama-submit{
   height: 5px;
@@ -534,7 +538,7 @@ header {
   }
   
   .event .container {
-    padding: 63px 70px 0;
+    padding: 30px 70px 0;
     text-align: center;
   }
   
