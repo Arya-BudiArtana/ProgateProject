@@ -41,6 +41,11 @@ a {
   margin-top: 5%;
 }
 
+.profile-container {
+  width: 90%;
+  align-content: center;
+}
+
 .top-wrapper {
   padding: 180px 0 200px 0;
   background-image: url(image/home.jpg);
@@ -169,12 +174,17 @@ header {
 }
 
 .profile-picture {
-  width: 30%;
+  width: 20%;
 }
 
 .profile-identity {
-  width: 70%;
+  width: 90%;
   align-self: center;
+  line-height: 4em;
+}
+
+.profile-identity p {
+  font-size: 35px;
 }
 
 .woman-profile .profile-identity {
@@ -227,6 +237,17 @@ header {
   .woman-profile {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .profile-picture{
+    width: 100%;
+  }
+
+  .profile-identity{
+    width: fit-content;
+  }
+  .profile-identity p {
+    text-align: left;
   }
 
     .top-wrapper h1 {
@@ -342,6 +363,7 @@ header {
   .footer-bottom a:hover{
     color:#057A67;
   }
+
 @keyframes text {
   0% {
     color: rgb(105, 102, 102);
