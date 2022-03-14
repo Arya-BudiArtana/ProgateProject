@@ -272,6 +272,11 @@ header {
   line-height: 45px;
   text-align: center;
 }
+
+.footer-social i {
+  margin: 0;
+}
+
 .main-contact .footer-social li{
   list-style: none;
   float: left;
