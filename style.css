@@ -151,7 +151,7 @@ header {
 }
 
 #profile {
-  background-color: #057a67;
+  background-color: #01251c;
   color: white;
   padding: 30px 0;
 }
@@ -279,6 +279,67 @@ header {
   color:#057A67;
 }
 
+.pesan-form{
+  background-color: #003d33;
+  text-align: center;
+  padding: 40px;
+} 
+.pesan-form h2{
+  font-size: 35px;
+  font-family: "Lucida Handwriting";
+  color: white;
+}
+.nama-submit{
+  height: 5px;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 0.8rem;
+  outline: 0;
+  transition: border 0.15s;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.pesan-form textarea{
+  width: 80%;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 0.8rem;
+  outline: 0;
+  transition: border 0.15s;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  
+}
+.submit-form{
+  background-color: #078a74;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 30%;
+  font-size: 17px;
+  transition:  0.5s;
+  border-radius: 10px;
+  font-family: monospace;
+  
+   
+}
+.submit-form:hover{
+  background-color: #00241e;
+  width: 70%
+}
+.pesan-form p{
+  font-size: 17px;
+  font-family:monospace;
+  color: white;
+  padding: 5px;
+}
+
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
   .top-wrapper h1 {
@@ -300,7 +361,11 @@ header {
   .btn {
     width: 30%;
   }
-
+  .pesan-form h2{
+    font-size: 25px;
+    font-family: "Lucida Handwriting";
+    color: white;
+  }
   .top-wrapper {
     padding: 180px 0 100px 0;
     background-image: url(image/home-mobile.jpg);
