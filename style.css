@@ -156,6 +156,12 @@ header {
   padding: 30px 0;
 }
 
+#galery {
+  background-color: #00241e;
+  color: white;
+  padding: 30px 0;
+}
+
 .content-title {
   text-align: center;
   font-size: 32px;
@@ -189,6 +195,28 @@ header {
 
 .woman-profile .profile-identity {
   text-align: right;
+}
+
+/* media galerry */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* Untuk Tablet */
@@ -266,7 +294,14 @@ header {
     .btn {
       width: 35%;
     }
+
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
   }
+
   
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
@@ -302,7 +337,11 @@ header {
       font-size: 14px;
       line-height: 20px;
     }
-    
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
   }
   .main-contact {
     position: relative;
