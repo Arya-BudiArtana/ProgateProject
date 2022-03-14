@@ -1,143 +1,233 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.home-container {
+  margin-top: 5%;
+}
+
+.top-wrapper {
+  padding: 180px 0 200px 0;
+  background-image: url(image/home.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 1;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.start {
+  background-color: #137f97;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-menu {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-menu a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.menu-icon {
+  display: none;
+}
+.move {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  animation: text 3s 1;
+}
+
+#profile {
+  background-color: #057a67;
+  color: white;
+  padding: 30px 0;
+}
+
+.content-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.man-profile,
+.woman-profile {
+  display: flex;
+  width: 100%;
+}
+
+.man-profile {
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 30%;
+}
+
+.profile-identity {
+  width: 70%;
+  align-self: center;
+}
+
+.woman-profile .profile-identity {
+  text-align: right;
+}
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 32px;
   }
-  
-  html, body,
-  ul, ol, li,
-  h1, h2, h3, h4, h5, h6, p, div {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Lucida Grande";
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .clear {
-    clear: left;
-  }
-  
-  .container {
-    max-width: 1440px;
-    padding: 0 15px;
-    margin: 0 auto;
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .btn {
+    width: 30%;
   }
 
-  .home-container{
-    margin-top: 5%;
-  }
-  
   .top-wrapper {
-    padding: 180px 0 200px 0;
-    background-image: url(image/home.jpg);
+    padding: 180px 0 100px 0;
+    background-image: url(image/home-mobile.jpg);
     background-size: cover;
     color: white;
     text-align: center;
   }
-  
-  .top-wrapper h1{
-    opacity: 1;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  .top-wrapper p {
-    opacity: 0.7;
-    margin-bottom: 3px;
-  }
-  
-  .btn-wrapper {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .btn-wrapper p {
-    margin: 10px 0;
-  }
-  
-  .start {
-    background-color: #137F97;
-  }
-  
-  .btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .btn:hover {
-    opacity: 1;
-  }
-  
-  .fa {
-    margin-right: 5px;
-  }
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(8, 8, 8, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
   .header-menu {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .header-menu a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  .header-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  
-  .heading h2 {
-    font-weight: normal;
-  }
-
-  .heading h3 {
-    font-weight: normal;
-  }
-   
-  .menu-icon {
     display: none;
   }
-  .move{
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    animation: text 3s 1;;
+
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: block;
   }
 
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .man-profile,
+  .woman-profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
     .top-wrapper h1 {
       font-size: 32px;
@@ -193,17 +283,75 @@
     }
     
   }
+  .main-contact {
+    position: relative;
+    background: #262627;
+    color: #d4dae3;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+  }
+  .main-contact h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .main-contact h2{
+    font-size: 14px;
+  }
+  .main-contact p{
+    margin-bottom: 10px;
+  }
+  .main-contact a{
+    color: #d4dae3;
+  }
+  .main-contact a:hover{
+    color:#057A67;
+  }
+  .grid-item {
+    padding: 60px 45px;
+  }
+  .main-contact .footer-social li a{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2f333b;
+    line-height: 45px;
+    text-align: center;
+  }
+  .main-contact .footer-social li{
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+  }
+  .main-contact .footer-social li a:hover{
+    background: #057A67;
+  }
+  .footer-bottom{
+    text-align: center;
+    font-family: "Lucida Grande";
+    background-color: rgba(8, 8, 8, 0.9);
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+  }
+  .footer-bottom a{
+    color:#fff;
+  }
+  .footer-bottom a:hover{
+    color:#057A67;
+  }
+@keyframes text {
+  0% {
+    color: rgb(105, 102, 102);
+  }
 
-  @keyframes text {
-    0% {
-        color: rgb(105, 102, 102);
-    }
+  30% {
+    letter-spacing: 15px;
+  }
 
-    30% {
-        letter-spacing: 15px;
-    }
-
-    85% {
-        letter-spacing: 8px;
-    }
+  85% {
+    letter-spacing: 8px;
+  }
 }
