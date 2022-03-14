@@ -97,11 +97,8 @@
   }
   
   .header-menu {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    float: right;
+    padding: 0 25%;
   }
   
   .header-menu a {
@@ -135,6 +132,67 @@
     margin-bottom: 20px;
     animation: text 3s 1;;
   }
+  /* Feranandah Start*/
+  .main-contact {
+    position: relative;
+    background: #262627;
+    color: #d4dae3;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+  }
+  .main-contact h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .main-contact h2{
+    font-size: 14px;
+  }
+  .main-contact p{
+    margin-bottom: 10px;
+  }
+  .main-contact a{
+    color: #d4dae3;
+  }
+  .main-contact a:hover{
+    color:#057A67;
+  }
+  .grid-item {
+    padding: 60px 45px;
+  }
+  .main-contact .footer-social li a{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2f333b;
+    line-height: 45px;
+    text-align: center;
+  }
+  .main-contact .footer-social li{
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+  }
+  .main-contact .footer-social li a:hover{
+    background: #057A67;
+  }
+  .footer-bottom{
+    text-align: center;
+    font-family: "Lucida Grande";
+    background-color: rgba(8, 8, 8, 0.9);
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+  }
+  .footer-bottom a{
+    color:#fff;
+  }
+  .footer-bottom a:hover{
+    color:#057A67;
+  }
+  /* Feranandah End*/
 
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
@@ -142,25 +200,12 @@
     .top-wrapper h1 {
       font-size: 32px;
     }
-
-    .header-menu {
-      float: none;
-      top: 50%;
-      left: 50%;
-      width: fit-content;
-      position: absolute;
-      transform: translate(-50%, -50%);
-    }
-
-    .btn {
-      width: 35%;
-    }
   }
   
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
     .btn {
-      width: 50%;
+      width: 30%;
     }
     
     .top-wrapper {
