@@ -219,6 +219,66 @@ header {
   width: 100%;
 }
 
+.main-contact {
+  position: relative;
+  background: #262627;
+  color: #d4dae3;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto;
+}
+.main-contact h1{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.main-contact h2{
+  font-size: 14px;
+}
+.main-contact p{
+  margin-bottom: 10px;
+}
+.main-contact a{
+  color: #d4dae3;
+}
+.main-contact a:hover{
+  color:#057A67;
+}
+.grid-item {
+  padding: 60px 45px;
+}
+.main-contact .footer-social li a{
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #2f333b;
+  line-height: 45px;
+  text-align: center;
+}
+.main-contact .footer-social li{
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+}
+.main-contact .footer-social li a:hover{
+  background: #057A67;
+}
+.footer-bottom{
+  text-align: center;
+  font-family: "Lucida Grande";
+  background-color: rgba(8, 8, 8, 0.9);
+  color: #fff;
+  padding: 20px 0px 20px 0px;
+}
+.footer-bottom a{
+  color:#fff;
+}
+.footer-bottom a:hover{
+  color:#057A67;
+}
+
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
   .top-wrapper h1 {
@@ -309,6 +369,7 @@ header {
       flex: 50%;
       max-width: 50%;
     }
+
   }
 
   
@@ -317,7 +378,6 @@ header {
     .btn {
       width: 50%;
     }
-    
     .top-wrapper {
         padding: 180px 0 100px 0;
         background-image: url(image/home-mobile.jpg);
@@ -385,69 +445,22 @@ header {
     #event .container .event-description .date-location p {
       margin-bottom: 28px;
     }
+    
+    .main-contact {
+      position: relative;
+      background: #262627;
+      color: #d4dae3;
+      display: grid;
+      column-gap: 20px;
+      grid-template-columns: none;
+    }
 
-
-
+    .grid-item {
+      padding: 15px 45px;
+    }
+    
   }
-  .main-contact {
-    position: relative;
-    background: #262627;
-    color: #d4dae3;
-    display: grid;
-    column-gap: 20px;
-    grid-template-columns: auto auto;
-  }
-  .main-contact h1{
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  .main-contact h2{
-    font-size: 14px;
-  }
-  .main-contact p{
-    margin-bottom: 10px;
-  }
-  .main-contact a{
-    color: #d4dae3;
-  }
-  .main-contact a:hover{
-    color:#057A67;
-  }
-  .grid-item {
-    padding: 60px 45px;
-  }
-  .main-contact .footer-social li a{
-    position: relative;
-    display: inline-block;
-    color: #ffffff;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #2f333b;
-    line-height: 45px;
-    text-align: center;
-  }
-  .main-contact .footer-social li{
-    list-style: none;
-    float: left;
-    margin-right: 15px;
-  }
-  .main-contact .footer-social li a:hover{
-    background: #057A67;
-  }
-  .footer-bottom{
-    text-align: center;
-    font-family: "Lucida Grande";
-    background-color: rgba(8, 8, 8, 0.9);
-    color: #fff;
-    padding: 20px 0px 20px 0px;
-  }
-  .footer-bottom a{
-    color:#fff;
-  }
-  .footer-bottom a:hover{
-    color:#057A67;
-  }
+ 
   #event {
     height: 800px;
     background-image: url(image/bg_event.jpg);
@@ -480,7 +493,6 @@ header {
   #event .container .event-description .date-location p {
     margin-bottom: 28px;
   }
-  
 @keyframes text {
   0% {
     color: rgb(105, 102, 102);
