@@ -326,8 +326,6 @@ header {
   transition:  0.5s;
   border-radius: 10px;
   font-family: monospace;
-  
-   
 }
 .submit-form:hover{
   background-color: #00241e;
@@ -360,6 +358,14 @@ header {
 @media all and (max-width: 670px) {
   .btn {
     width: 30%;
+  }
+  
+  .submit-form{
+    padding: 5px;
+    width: max-content;
+  }
+  .event-container {
+  max-height: 1440px;
   }
   .pesan-form h2{
     font-size: 25px;
@@ -445,7 +451,7 @@ header {
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
     .btn {
-      width: 50%;
+      width: 60%;
     }
     .top-wrapper {
         padding: 180px 0 100px 0;
