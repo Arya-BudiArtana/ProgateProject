@@ -463,7 +463,6 @@ header {
 
   }
   .event {
-    height: 700px;
     background-image: url(image/bg_event.jpg);
     background-size: cover;
   }
@@ -506,12 +505,6 @@ header {
       flex: 100%;
       max-width: 100%;
     }
-
-    .event {
-      height: 1000px;
-      background-image: url(image/bg_event.jpg);
-      background-size: cover;
-    }
     
     .event .container {
       padding: 180px 0 100px 0;
@@ -524,11 +517,6 @@ header {
       line-height: 36px;
       margin-bottom: 64px;
       text-align: center;
-    }
-    
-    .event .container .event-description {
-      width: 1200px;
-      height: 126px;
     }
     
     .event .container .event-description p {
@@ -553,7 +541,7 @@ header {
   }
   
   .event .container {
-    padding: 30px 70px 0;
+    padding: 30px 70px;
     text-align: center;
   }
   
@@ -563,11 +551,6 @@ header {
     margin-bottom: 64px;
     text-align: center;
     padding-top: 40px;
-  }
-  
-  .event .container .event-description {
-    width: fit-content;
-    height: 126px;
   }
   
   .event .container .event-description p {
