@@ -80,6 +80,17 @@ a {
   background-color: #137f97;
 }
 
+.btn-location {
+  padding: 8px 40px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
 .btn {
   padding: 12px 24px;
   color: white;
@@ -93,6 +104,9 @@ a {
   opacity: 1;
 }
 
+.btn-location:hover {
+  opacity: 1;
+}
 .fa {
   margin-right: 5px;
 }
@@ -166,6 +180,7 @@ header {
   text-align: center;
   font-size: 54px;
   margin-bottom: 20px;
+  padding-top: 40px;
 }
 
 .man-profile,
@@ -518,10 +533,6 @@ header {
       margin-bottom: 12px;
     }
     
-    .event .container .event-description .date-location p {
-      margin-bottom: 28px;
-    }
-    
     .main-contact {
       position: relative;
       background: #262627;
@@ -547,6 +558,7 @@ header {
     font-size: 64px;
     margin-bottom: 64px;
     text-align: center;
+    padding-top: 40px;
   }
   
   .event .container .event-description {
@@ -561,7 +573,7 @@ header {
   }
   
   .event .container .event-description .date-location p {
-    margin-bottom: 28px;
+    margin-bottom: 8px;
   }
 @keyframes text {
   0% {
