@@ -153,10 +153,10 @@ header {
 #profile {
   background-color: #01251c;
   color: white;
-  padding: 30px 0;
+  padding: 30px;
 }
 
-#galery {
+.galery {
   background-color: #00241e;
   color: white;
   padding: 30px 0;
@@ -364,9 +364,6 @@ header {
     padding: 5px;
     width: max-content;
   }
-  .event-container {
-  max-height: 1440px;
-  }
   .pesan-form h2{
     font-size: 25px;
     font-family: "Lucida Handwriting";
@@ -443,7 +440,7 @@ header {
 
   }
   .event {
-    height: 800px;
+    height: 700px;
     background-image: url(image/bg_event.jpg);
     background-size: cover;
   }
