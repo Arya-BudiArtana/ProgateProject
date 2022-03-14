@@ -197,6 +197,38 @@ header {
   text-align: right;
 }
 
+#event {
+  height: 960px;
+  background-image: url(image/bg_event.jpg);
+  background-size: cover;
+}
+
+#event .container {
+  padding: 63px 70px 0;
+  text-align: center;
+}
+
+#event .container h1 {
+  color: #fff;
+  font-size: 64px;
+  margin-bottom: 64px;
+}
+
+#event .container .event-description {
+  width: 1200px;
+  height: 126px;
+}
+
+#event .container .event-description p {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 52px;
+}
+
+#event .container .event-description .date-location p {
+  margin-bottom: 28px;
+}
+
 /* media galerry */
 .row {
   display: -ms-flexbox; /* IE10 */
