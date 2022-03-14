@@ -361,6 +361,10 @@ header {
   .btn {
     width: 30%;
   }
+  
+  .event-container {
+  max-height: 1440px;
+  }
   .pesan-form h2{
     font-size: 25px;
     font-family: "Lucida Handwriting";
@@ -441,7 +445,7 @@ header {
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
     .btn {
-      width: 50%;
+      width: 60%;
     }
     .top-wrapper {
         padding: 180px 0 100px 0;
